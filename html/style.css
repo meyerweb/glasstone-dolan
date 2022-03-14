@@ -119,6 +119,9 @@ figure img, figure svg {
     max-width: 100%;
     height: auto;
 }
+figure :is(img, svg):not(:hover) {
+	filter: grayscale(1);
+}
 figure .halfwidth {
     max-width: 50%;
     margin-inline: auto;
