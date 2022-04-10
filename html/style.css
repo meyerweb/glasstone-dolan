@@ -164,7 +164,7 @@ main aside h4 {
 main aside figure {
     margin-block: 2em;
 }
-main aside em {
+main aside em:not(.maths) {
     margin-inline-end: 1ch;
 }
 
