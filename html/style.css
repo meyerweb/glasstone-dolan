@@ -455,10 +455,12 @@ sup a:any-link {
 	visibility: hidden;
 }
 
+/*
 em.maths {
 	padding: 1rem;
 	background: #FAA3;
 }
+*/
 
 em.maths sub, em.maths sup {
 	font-style: normal;
