@@ -454,3 +454,18 @@ sup a:any-link {
 	display: none;
 	visibility: hidden;
 }
+
+em.maths {
+	padding: 1rem;
+	background: #FAA3;
+}
+
+em.maths sub, em.maths sup {
+	font-style: normal;
+	font-size: 75%;
+	vertical-align: -0.25em;
+	padding-inline-end: 0.25ch; 
+}
+em.maths sup {
+	vertical-align: 0.42em;
+}
