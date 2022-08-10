@@ -1,0 +1,32 @@
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1545 1024">
+<defs>
+<style type="text/css">
+#graph {stroke: #000; stroke-width: 5; stroke-linejoin: round; fill: none;}
+#axes {stroke-width: 7;}
+#arrow {stroke-width: 3; fill: #000;}
+
+text {stroke-width: 0; fill: #000; font-family: "Routed Gothic", sans-serif; word-spacing: 0.2ch;}
+#axes text {font-size: 47px;}
+#content text {font-size: 39px;}
+
+text.vertical {rotate: -90deg;}
+#axes .vertical {transform-origin: 37px 567px; font-size: 46px;}
+#content .vertical {transform-origin: 943px 798px;}
+</style>
+</defs>
+
+<g id="graph">
+	<g id="axes">
+		<path d="M 80,5 v 915 h 1460" />
+		<text x="37" y="567" class="vertical">PRESSURE</text>
+		<text x="633" y="1005">DISTANCE</text>
+	</g>
+	<g id="content">
+		<path id="plot" d="M 82,850 s 755,-30 877,-586 v 653" />
+		<path id="arrow" d="M 961,603 h 126 l -30,-5 l -2,5 l 2,5 l 30,-5" />
+		<text x="943" y="798" class="vertical">SHOCK FRONT</text>
+		<text x="1038" y="908">AMBIENT PRESSURE</text>
+	</g>
+</g>
+
+</svg>
