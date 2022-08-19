@@ -1,7 +1,7 @@
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" stroke="#000" stroke-width="1" fill="none">
 <defs>
 <style>
-text {
+#fig1-02 text {
 	font: 38.75px "Routed Gothic", Arial, sans-serif;
 	text-transform: uppercase;
 	word-spacing: 0.2ch;
@@ -9,7 +9,7 @@ text {
 	stroke: #000;
 	stroke-width: 0.5;
 }
-symbol {transform-origin: 0% 0%;}
+#fig1-02 symbol {transform-origin: 0% 0%;}
 </style>
 <symbol id="arrowhead" viewBox="0 0 35 12" height="10" width="30" preserveAspectRatio="none" >
 	<path d="M 0,6

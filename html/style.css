@@ -8,6 +8,15 @@ em.maths {
 	background: #F001;
 }
 */
+@font-face {
+	font-family: "Routed Gothic";
+	src: url("fonts/routed-gothic.ttf");
+}
+@font-face {
+	font-family: "Routed Gothic";
+	font-style: italic;
+	src: url("fonts/routed-gothic-italic.ttf");
+}
 
 html {
 	--ui-shade : #654;
