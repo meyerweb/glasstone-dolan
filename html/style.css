@@ -306,6 +306,22 @@ figure p {
 	text-indent: 0;
 }
 
+/* SVG figures */
+
+svg {
+	stroke: #000;
+	fill: none;
+}
+svg text {
+	font-family: "Routed Gothic", Arial, sans-serif;
+	text-transform: uppercase;
+	word-spacing: 0.2ch;
+	fill: #000;
+	stroke: #000;
+	stroke-width: 0.5;
+}
+
+
 /* Equation figures */
 
 figure.numbered.equation {
