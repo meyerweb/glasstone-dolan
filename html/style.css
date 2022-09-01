@@ -317,10 +317,11 @@ svg text {
 	text-transform: uppercase;
 	word-spacing: 0.2ch;
 	fill: #000;
-	stroke: #000;
 	stroke-width: 0.5;
 }
-
+svg .ital {
+	font-style: italic;
+}
 
 /* Equation figures */
 
