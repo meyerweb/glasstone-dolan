@@ -319,9 +319,16 @@ svg text {
 	fill: #000;
 	stroke-width: 0.5;
 }
+svg .lcase {
+	text-transform: lowercase;
+}
 svg .ital {
 	font-style: italic;
 }
+svg .bold {
+	font-weight: 700;
+}
+
 
 /* Equation figures */
 
