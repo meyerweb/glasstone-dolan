@@ -281,6 +281,7 @@ figure img, figure svg {
 	max-width: 100%;
 	display: block;
 	height: auto;
+	margin-bottom: 1rem;
 }
 figure.wide {
 	margin-block: 3em;
@@ -314,6 +315,7 @@ svg {
 }
 svg text {
 	font-family: "Routed Gothic", Arial, sans-serif;
+	font-kerning: none;
 	text-transform: uppercase;
 	word-spacing: 0.2ch;
 	fill: #000;
@@ -327,6 +329,12 @@ svg .ital {
 }
 svg .bold {
 	font-weight: 700;
+}
+svg tspan.sup {
+	font-size: 50%;
+}
+svg .serif-font text {
+	font-family: Times, serif;
 }
 
 
