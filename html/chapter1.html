@@ -272,14 +272,13 @@ Table 1.45
 <p id="§1.47"><strong>1.47</strong> The escape of neutrons occurs at the exterior of the uranium (or plutonium) material. The rate of loss by escape will thus be determined by the surface area. On the other hand, the fission process, which results in the formation of more neutrons, takes place throughout the whole of the material and its rate is, therefore, dependent upon the mass. By increasing the mass of the fissionable material, at constant density, the ratio of the surface area to the mass is decreased; consequently, the loss of neutrons by escape relative to their formation by fission is decreased. The same result can also be achieved by having a constant mass but compressing it to a smaller volume (higher density), so that the surface area is decreased.</p>
 <p id="§1.48"><strong>1.48</strong> The situation may be understood by reference to Fig. 1.48 showing two spherical masses, one larger than the other, of fissionable material of the same density. Fission is initiated by a neutron represented by a dot within a small circle. It is supposed that in each act of fission three neutrons are emitted; in other words, one neutron is captured and three are expelled. The removal of a neutron from the system is indicated by the head of an arrow. Thus, an arrowhead within the sphere means that fission has occurred and extra neutrons are produced, whereas an arrowhead outside the sphere implies the loss of a neutron. It is evident from Fig. 1.48 that a much greater fraction of the neutrons is lost from the smaller than from the larger mass.</p>
 
-<figure>
+<figure id="fig01-48">
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2076 1265" stroke="#000" stroke-width="4.5" stroke-linejoin="round" fill="none" preserveAspectRatio="xMinYMin">
 	<desc>Two circles side by side, the left roughly twice the size of the right. Inside each circle, toward the top center of each, is a small circle with a dot at its center, meant to represent an atom of the fissionable material. This dot-circle has an arrow emergring from it, ending a short distance away. From the tip of that arrow branch three more arrows, pointing off in widely-spaced directions, close to but not precisely 120 degrees separated. From the tip of each of those arrows branch another three arrows, and so on. The larger circle on the left has many more arrow branches than the circle on the right.</desc>
-
 	<style>
-		svg ellipse {stroke-width: 10;}
-		svg circle {stroke-width: 6.5;}
-		svg circle.dot {stroke-width: 0; fill: #000;}
+		#fig01-48 ellipse {stroke-width: 10;}
+		#fig01-48 circle {stroke-width: 6.5;}
+		#fig01-48 circle.dot {stroke-width: 0; fill: #000;}
 	</style>
 	<ellipse cx="1730" cy="661" rx="285" ry="284" />
 	<circle cx="1694" cy="494" r="23" />
@@ -370,7 +369,17 @@ Table 1.45
 
 <figure>
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2065 680" fill="none" stroke="#000" stroke-width="6" stroke-linejoin="round" preserveAspectRatio="xMinYMin">
-	<image href="figures/fig01-52-crop.png" x="52" y="219" width="1949" height="194"/>
+	<defs>
+		<pattern id="dotted-fill" viewBox="0 0 13 21" width="13" height="22" x="6" y="4" stroke-width="0" fill="#333" patternUnits="userSpaceOnUse">
+			<circle cx="2" cy="2" r="3" />
+			<circle cx="11" cy="13" r="3" />
+		</pattern>
+		<pattern id="dotted-fill-2" viewBox="0 0 13 21" width="13" height="22" x="8" y="2" stroke-width="0" fill="#333" patternUnits="userSpaceOnUse" patternTransform="rotate(-8.66)">
+			<circle cx="2" cy="2" r="3" />
+			<circle cx="11" cy="13" r="3" />
+		</pattern>
+	</defs>
+	<image href="figures/fig01-52-crop.png" x="52" y="219" width="329" height="194"/>
 	<g font-size="38">
 		<text x="286" y="52">Subcritical <tspan x="353" y="100">mass</tspan></text>
 		<text x="711" y="52">Subcritical <tspan x="775" y="100">mass</tspan></text>
@@ -380,17 +389,21 @@ Table 1.45
 
 	<path d="M 131,184 h 715 a 143 134 0 0 1 0,264 h -715 a 143 134 0 0 1 0,-263" />
 	<path d="M 151,223 h 677 a 95 92 0 0 1 0,184 h -677 a 95 92 0 0 1 0,-184" />
-	<line x1="371" y1="110" x2="389" y2="225" />
-	<line x1="840" y1="117" x2="856" y2="228" />
-	<line x1="235" y1="496" x2="209" y2="408" />
-
-	<line x1="440" y1="315" x2="530" y2="315" marker-end="url(#arrow-simple)" />
-	<line x1="979" y1="315" x2="1048" y2="315" marker-end="url(#dart-simple)"  />
+	<path d="M 828,223 a 95 92 0 0 1 0,184 z" fill="url(#dotted-fill)" />
+	<path d="M 421,407 a 95 92 0 0 1 0,-184 z" fill="url(#dotted-fill)" />
 
 	<path d="M 1211,185 h 710 a 143 134 0 0 1 0,263 h -710 a 143 134 0 0 1 0,-263" />
 	<path d="M 1236,223 h 667 a 95 92 0 0 1 0,184 h -667 a 95 92 0 0 1 0,-184" />
-	<line x1="1848" y1="111" x2="1888" y2="225" />
+	<circle cx="1905" cy="315" r="92" fill="url(#dotted-fill-2)" />
 
+	<g marker-end="url(#arrow-simple)">
+		<line x1="371" y1="110" x2="394" y2="253" />
+		<line x1="840" y1="117" x2="861" y2="258" />
+		<line x1="440" y1="315" x2="530" y2="315" />
+		<line x1="979" y1="315" x2="1048" y2="315"  />
+		<line x1="1848" y1="111" x2="1905" y2="270" />
+	</g>
+	<line x1="235" y1="496" x2="209" y2="408" />
 	<g>
 		<text x="279" y="662" font-size="47">( Before firing )</text>
 		<text x="1143" y="613" font-size="46">( Immediately after firing ) <tspan x="1317" y="678">then explodes</tspan></text>
