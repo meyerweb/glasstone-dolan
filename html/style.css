@@ -330,7 +330,7 @@ svg .ital {
 svg .bold {
 	font-weight: 700;
 }
-svg tspan.sup {
+svg tspan:is(.sup, .sub) {
 	font-size: 50%;
 }
 svg .serif-font text {
