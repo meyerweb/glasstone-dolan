@@ -331,8 +331,12 @@ svg .bold {
 	font-weight: 700;
 }
 svg tspan:is(.sup, .sub) {
-	font-size: 50%;
+	font-size: 60%;
 }
+svg tspan.big:is(.sup, .sub) {
+	font-size: 80%;
+}
+
 svg .serif-font text {
 	font-family: Times, serif;
 }
