@@ -595,10 +595,11 @@ sup [href]:any-link {
 	background: #FFF;
 	box-shadow: 0 0 3em 3em #FFF;
 	box-sizing: border-box;
-	width: min(100%,100vw);
-	max-width: min(45em,100vw);
+	width: min(100%, 100vw);
+	max-width: min(45em, 100vw);
 	animation: fnSlide 333ms forwards ease-out;
 }
+
 
 @keyframes fnSlide {
 	from {
@@ -647,8 +648,43 @@ sup [href]:any-link {
 	white-space: nowrap;
 }
 
-@media (min-width: 42rem) {
-	.endnotes li:target {
-		width: 42rem;
+@supports (anchor-name: --bar) {
+	@media (min-width: 75em) {
+		main {
+			anchor-name: --main;
+			background: #FAA;
+		}
+		sup [href]:any-link {
+			padding-block: 0;
+			padding-inline: 0.1em 0;
+			margin-inline: 0;
+			position: static;
+			z-index: 1;
+			color: inherit;
+			text-decoration: none;
+			cursor: text;
+			pointer-events: none;
+		}
+		.endnotes li, .endnotes li:target {
+			position: absolute;
+			top: calc(anchor(top) - 0.2em);
+			bottom: auto;
+			right: 0;
+			left: anchor(--main right);
+			animation: fade 222ms;
+			padding: 0;
+			padding-inline: 1em;
+			box-shadow: none;
+			box-sizing: border-box;
+			border: none;
+			background: none;
+		}
+		.endnotes li:target .close {
+			display: none;
+		}
+		.endnotes li .backjump {
+			display: none;
+			visibility: hidden;
+		}
 	}
 }
