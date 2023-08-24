@@ -648,12 +648,30 @@ sup [href]:any-link {
 	white-space: nowrap;
 }
 
-@supports (anchor-name: --bar) {
-	@media (min-width: 75em) {
-		main {
-			anchor-name: --main;
-			background: #FAA;
+@media (min-width: 42rem) {
+	.endnotes li:target {
+		width: 42rem;
+	}
+}
+
+@supports (anchor-name: --main) {
+
+	main {
+		anchor-name: --main;
+	}
+	.endnotes li, .endnotes li:target {
+		width: auto;
+	}
+
+	@media (width <= 75em) {
+		.endnotes li, .endnotes li:target {
+			left: anchor(--main left);
+			right: anchor(--main right);
+			width: auto;
 		}
+	}
+
+	@media (width > 75em) {
 		sup [href]:any-link {
 			padding-block: 0;
 			padding-inline: 0.1em 0;
@@ -667,18 +685,23 @@ sup [href]:any-link {
 		}
 		.endnotes li, .endnotes li:target {
 			position: absolute;
-			top: calc(anchor(top) - 0.2em);
+			anchor-name: --sidenote;
+			top: max(anchor(top) , calc(anchor(--sidenote bottom) + 0.67em));
 			bottom: auto;
+			left: calc(anchor(--main right) + 0.5em);
 			right: 0;
-			left: anchor(--main right);
+			max-width: 23em;
 			animation: fade 222ms;
 			padding: 0;
 			padding-inline: 1em;
+			margin-block: 0;
 			box-shadow: none;
 			box-sizing: border-box;
 			border: none;
 			background: none;
+			background: #FFF8;
 		}
+		.endnotes h2,
 		.endnotes li:target .close {
 			display: none;
 		}
@@ -687,4 +710,8 @@ sup [href]:any-link {
 			visibility: hidden;
 		}
 	}
+	section.biblio {
+		margin-block: 10vh;
+	}
+
 }
