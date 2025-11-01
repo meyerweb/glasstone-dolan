@@ -701,8 +701,9 @@ sup [href]:any-link {
 			border: none;
 			background: #FFF8;
 			text-indent: 0;
+			list-style: none;
 		}
-		.endnotes li sup {
+		.endnotes li sup:first-child {
 			position: absolute;
 			right: 100%;
 			margin-right: 0.25em;
